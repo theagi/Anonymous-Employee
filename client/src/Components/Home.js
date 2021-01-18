@@ -37,12 +37,13 @@ const Home = () =>{
                     </div>
                 </div>
                 <hr className = 'line' style ={{marginTop:'12%'}} />
+                
+                <div id = 'homePrompts'>
+                    <button>New Employee</button>
+                    <button>New Employer</button>
+                </div>
             </div>
 
-            <div id = 'homePrompts'>
-                <button>New Employee</button>
-                <button>New Employer</button>
-            </div>
         </React.Fragment>
     )
 }
