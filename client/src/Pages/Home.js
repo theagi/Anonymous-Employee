@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Components/Footer';
 
 const Home = () =>{
     return(
@@ -21,7 +22,7 @@ const Home = () =>{
             <div id = 'homeContainer2'>
                 <div id = 'features'>
                     <div className = 'imgGroup'>
-                        <img style = {{marginRight:'10%'}} src = 'assets/male.svg' alt = 'male logo' />
+                        <img src = 'assets/male.svg' alt = 'male logo' />
                         <img src = 'assets/female.svg' alt = 'female logo'/>
                     </div>
                     <div className = 'featuresText'>
@@ -43,7 +44,7 @@ const Home = () =>{
                     <button>New Employer</button>
                 </div>
             </div>
-
+            <Footer />
         </React.Fragment>
     )
 }

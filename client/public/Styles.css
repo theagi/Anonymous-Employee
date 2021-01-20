@@ -15,11 +15,10 @@ button{
     outline: none;
 }
 
+/*
 #homeContainer1{
-    /* background-color: black; */
     height:100vh;
     width:100%;
-    /* color:white; */
     font-family: 'Lato', sans-serif;
     position: relative;
     top:15vh;
@@ -30,14 +29,7 @@ button{
     font-size: 3rem;
 }
 
-#navContainer{
-    background-color: white;
-    height:12vh;
-    transition: height 0.7s;
-    position:fixed;
-    width: 100%;
-    z-index: 1000;
-}
+
 
 #navContainer:hover{
     height:14vh;
@@ -57,7 +49,6 @@ button{
     color:white;
     font-family: 'Lato',sans-serif;
     border:none;
-    /* letter-spacing: px; */
     font-size: 1rem;
 }
 
@@ -178,4 +169,57 @@ button{
 
 #homePrompts button:hover{
     background-color: black;
+}
+
+#footer{
+    background-color: black;
+    width:100%;
+    height:3vh;
+    margin:0;
+    padding:0;
+    height:20vh;
+    color:white;
+    position:relative;
+}
+
+#footer p{
+    position:absolute;
+    left:18%;
+    font-family: 'Lato',sans-serif;
+    font-size:1rem;
+}
+
+@media screen and (max-width:1000px){
+    .imgGroup img{
+        width:30vw;
+        height:30vh;
+        margin: -4vw;
+    }
+
+    .imgGroup{
+        position: absolute;
+        right:2%;
+        top:1vh;
+    }
+
+    .featuresText p{
+        width:50%;
+        width:100%;
+    }
+
+    .featuresText{
+        position: relative;
+        right:8%;
+    }
+}
+*/
+
+#navContainer{
+    background-color: white;
+    height:12vh;
+    transition: height 0.7s;
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+    display: none;
 }
