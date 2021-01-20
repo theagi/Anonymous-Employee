@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Toggle = () =>{
+const Toggle = (props) =>{
     return(
         <div id = 'toggleSD'>
-            <img id = 'hamburger' src = '/assets/hamburger.png' alt = 'Hamburger Icon'/>
+            <img onClick = {props.toggle} id = 'hamburger' src = '/assets/hamburger2.png' alt = 'Hamburger Icon'/>
             <p>AnonHire</p>
             <img id = 'logo' src = '/assets/sitelogo.png' alt = 'Rocket Logo'/>
         </div>
