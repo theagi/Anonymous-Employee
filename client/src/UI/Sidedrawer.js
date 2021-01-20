@@ -6,7 +6,5 @@ const SideDrawer = () =>{
             
         </div>
     )
-
 }
-
 export default SideDrawer;

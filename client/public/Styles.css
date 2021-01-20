@@ -223,3 +223,42 @@ button{
     z-index: 1000;
     display: none;
 }
+
+#toggleSD{
+    width:100%;
+    height:10%;
+    position:fixed;
+    background-color:#007fff;
+    z-index:1000;
+}
+
+#hamburger{
+    position:relative;
+    left:2%;
+    top:1vh;
+    width:50px;
+    height:50px;
+}
+
+#logo{
+    position:absolute;
+    right:2%;
+    top:0.8vh;
+    width:50px;
+    height:50px;
+}
+
+#toggleSD p{
+    color:white;
+    font-family:'Lato', sans-serif;
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+@media screen and (max-width:308px){
+    #toggleSD p{
+        font-size: 0.8em;
+    }
+}
