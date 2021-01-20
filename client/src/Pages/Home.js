@@ -22,29 +22,26 @@ const Home = () =>{
             <div id = 'homeContainer2'>
                 <div id = 'features'>
                     <div className = 'imgGroup'>
-                        <img src = 'assets/male.svg' alt = 'male logo' />
+                        <img style = {{marginRight:'10px'}} src = 'assets/male.svg' alt = 'male logo' />
                         <img src = 'assets/female.svg' alt = 'female logo'/>
                     </div>
                     <div className = 'featuresText'>
                         <h1>Standard Features</h1>
                         <p>
                             This tool incorporates typical features such as
-                            <br />
                             resume parsing and automated emails. Employers
-                            <br />
                             may set a limit on applicants if needed.
-                            <br />
                         </p>
                     </div>
                 </div>
-                <hr className = 'line' style ={{marginTop:'12%'}} />
+                <hr className = 'line' />
                 
                 <div id = 'homePrompts'>
                     <button>New Employee</button>
                     <button>New Employer</button>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </React.Fragment>
     )
 }
