@@ -1,0 +1,52 @@
+#signUpContainer{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:15vh;
+}
+
+#signUpContainer h1{
+    text-align:center;
+    font-family: "Lato",sans-serif;
+    color:#007fff;
+}
+
+#signUpContainer img{
+    position: relative;
+    left:50%;
+}
+
+.inputs{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    margin:auto;
+    margin-top:5vh;
+}
+
+.inputs input[type = "text"], .inputs input[type = 'password']{
+    border-radius:12px;
+    border:1px solid #007fff;
+    padding:2%;
+    font-family: 'Lato',sans-serif;
+    outline:none;
+}
+
+.inputs input[type = 'text']:focus, .inputs input[type = 'password']:focus{
+    border:1px solid #f700ff;
+}
+
+.inputs input[type = 'file']{
+    margin:auto;
+}
+
+.inputs button{
+    border:none;
+    background-color:#007fff;
+    color:white;
+    font-family: 'Lato',sans-serif;
+    height:5vh;
+    /* max-width:70vw; */
+    /* margin:auto; */
+    font-size: 1rem;
+}

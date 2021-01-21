@@ -1,8 +1,12 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Footer from '../../Components/Footer/Footer';
 import './Home.css';
 
 const Home = () =>{
+    useEffect(() =>{
+        document.title = 'AnonHire';
+    });
+
     return(
         <React.Fragment>
             <div id = 'homeContainer1'>

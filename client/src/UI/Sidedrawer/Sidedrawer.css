@@ -1,7 +1,7 @@
 .sideDrawer{
     width:40vw;
     height:100vh;
-    background-color: white;
+    background-color:white;
     font-family: 'Lato',sans-serif;
     color:#007fff;
     transition:0.5s;
@@ -18,10 +18,13 @@
     list-style: none;
     width:80%;
     margin:auto;
+    position:relative;
+    top:5vh;
 }
  .sideDrawer img{
      position:absolute;
      right:3vw;
+     top:1vh;
  }
 
  .sideDrawer.openSide{
