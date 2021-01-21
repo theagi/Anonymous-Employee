@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ToggleSD.css";
 
 const Toggle = (props) =>{
     return(

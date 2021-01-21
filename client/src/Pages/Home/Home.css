@@ -1,0 +1,96 @@
+#homeContainer1{
+    height:100vh;
+    width:100vw;
+    position:relative;
+    top:10vh;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#intro h1{
+    font-size: 1.5rem;
+}
+
+#intro img{
+    width:100%;
+    max-height:35vh;
+    position: relative;
+    top:2vh;
+    margin:20px auto;
+}
+
+#intro div{
+    position:relative;
+    margin-top: 10%;
+    width:90%;
+    margin:auto;
+}
+
+.line{
+    background-color:#007fff;
+    margin-top:6vh;
+    width:50%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#homeContainer2{
+    height:100vh;
+    width:100vw;
+    position: absolute;
+    top:90vh;
+}
+
+.imgGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100vw;
+    margin-top:10vh;
+}
+
+#features{
+    display:flex;
+    flex-direction: column;
+}
+
+#features div img{
+    width:140px;
+    height:140px;
+}
+
+.featuresText{
+    font-family: 'Lato', sans-serif;
+    margin:auto;
+    margin-top:5%;
+    width:90%;
+}
+
+.featuresText{
+    text-align: center;
+}
+
+#homePrompts{
+    display: flex;
+    flex-direction: row;
+    margin-top:10vh;
+    justify-content:center;
+}
+
+#homePrompts button{
+    padding:2%;
+    border-radius: 25px;
+    border: none;
+    margin:5px;
+    background-color: #007fff;
+    font-family: 'Lato',sans-serif;
+    font-size: 1.3rem;
+    color:white;
+}
