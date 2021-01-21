@@ -17,11 +17,12 @@
 }
 
 .inputs{
-    display:flex;
-    flex-direction:column;
+    /* display:flex;
+    flex-direction:column; */
     width:50%;
     margin:auto;
     margin-top:5vh;
+    transition:transform 0.5s;
 }
 
 .inputs input[type = "text"], .inputs input[type = 'password']{
@@ -50,3 +51,36 @@
     /* margin:auto; */
     font-size: 1rem;
 }
+
+#identifier{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radioGroup{
+    margin:1vh 1vw;
+}
+
+.radioGroup input{
+    margin-left:1vw;
+}
+
+#employeeForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#employerForm{
+    display: flex;
+    flex-direction: column;
+}
+
+/*A better way to switch the forms if using css slide effect. Might change that later */
+/* .hide{
+    transform:translateX(-100%);
+}
+
+.show{
+    transform
+} */

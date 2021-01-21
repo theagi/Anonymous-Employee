@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import Footer from '../../Components/Footer/Footer';
 import './Home.css';
 
@@ -42,8 +43,8 @@ const Home = () =>{
                 <hr className = 'line' />
                 
                 <div id = 'homePrompts'>
-                    <button>New Employee</button>
-                    <button>New Employer</button>
+                        <button >Register</button>
+                        <button>Login</button>
                 </div>
             </div>
             {/* <Footer /> */}

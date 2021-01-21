@@ -30,3 +30,8 @@
  .sideDrawer.openSide{
      transform:translateX(0);
  }
+
+ li{
+     text-decoration: none;
+ }
+

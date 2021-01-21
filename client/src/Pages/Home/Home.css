@@ -87,7 +87,7 @@
 #homePrompts button{
     padding:2%;
     border-radius: 25px;
-    border: none;
+    border: 2px solid black;
     margin:5px;
     background-color: #007fff;
     font-family: 'Lato',sans-serif;
