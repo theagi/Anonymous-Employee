@@ -7,20 +7,41 @@ const SignUp = () =>{
     },[]);
 
     const [identity, updateIdentity] = useState('employee');
+    const [inputs, updateInputs] = useState({
+       fName:'',
+       lName:'',
+       pEmail:'',
+       pPass:'',
+       pConfirm:'', 
+       cName:'',
+       cEmail:'',
+       cPass:'',
+       cConfirm:''
+    });
+
+    const handleChange = (e) =>{
+        let name = e.target.name;
+        let value = e.target.value;
+
+        updateInputs(prev =>({
+            ...prev,
+            [name]:value
+        }));
+        //console.log(inputs);
+    }
 
     let employeeForm =  
     (
         <div id = 'employeeForm'>
-            <input name = 'fName' type = 'text' placeholder = 'First Name'/>
-            <input name = 'lName'style = {{marginTop:'1vh'}} type = 'text' placeholder = 'Last Name'/>
-            <input name = 'pEmail' style = {{marginTop:'1vh'}} type = 'text' placeholder = 'Email'/>
-            <input name = 'pPass' style = {{marginTop:'1vh'}} type = 'password' placeholder = 'Password'/>
-            <input name = 'pConfirm' style = {{marginTop:'1vh'}} type = 'password' placeholder = 'Confirm Password'/>
+            <input onChange = {handleChange} name = 'fName' type = 'text' placeholder = 'First Name'/>
+            <input onChange = {handleChange} name = 'lName'style = {{marginTop:'1vh'}} type = 'text' placeholder = 'Last Name'/>
+            <input onChange = {handleChange} name = 'pEmail' style = {{marginTop:'1vh'}} type = 'text' placeholder = 'Email'/>
+            <input onChange = {handleChange} name = 'pPass' style = {{marginTop:'1vh'}} type = 'password' placeholder = 'Password'/>
+            <input onChange = {handleChange} name = 'pConfirm' style = {{marginTop:'1vh'}} type = 'password' placeholder = 'Confirm Password'/>
             <input name = 'resume' style = {{marginTop:'1vh'}} type = 'file' />
             <button style = {{marginTop:'3vh'}}>Register</button>
         </div>
     );
-
 
     let employerForm = 
     (

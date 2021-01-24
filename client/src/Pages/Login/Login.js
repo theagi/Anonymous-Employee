@@ -7,11 +7,27 @@ const Login = () =>{
     });
 
     const [identity, updateIdentity] = useState('employee');
+    const [inputs, updateInputs] = useState({
+        logEmail:'',
+        logPass:''
+    });
 
     const changeIdentity = (event) =>{
         let value = event.target.value;
         updateIdentity(value);
         console.log(identity);
+    }
+
+    const handleChange = (e) =>{
+        let name = e.target.name;
+        let value = e.target.value;
+
+        updateInputs(prev =>({
+            ...prev,
+            [name]:value
+        }));
+
+        console.log(inputs);
     }
 
     return(
@@ -31,8 +47,8 @@ const Login = () =>{
             </div>
 
             <form>
-                <input type = 'text' placeholder = {(identity === 'employee') ? 'Candidate Email' : 'Company Email'}/>
-                <input type = 'password' placeholder = 'Password'/>
+                <input onChange = {handleChange} name = 'logEmail' type = 'text' placeholder = {(identity === 'employee') ? 'Candidate Email' : 'Company Email'}/>
+                <input onChange = {handleChange} name = 'logPass' type = 'password' placeholder = 'Password'/>
                 <button>Login</button>
             </form>
         </div>
