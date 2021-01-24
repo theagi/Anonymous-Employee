@@ -5,6 +5,7 @@ import Navbar from './UI/Navbar/Navbar';
 import Toggle from './UI/ToggleSD/ToggleSD';
 import SideDrawer from './UI/Sidedrawer/Sidedrawer';
 import Signup from './Pages/SignUp/SignUp';
+import Login from './Pages/Login/Login';
 
 
 function App() {
@@ -27,6 +28,10 @@ const toggleNav = () =>{
 
         <Route exact path = '/signup'>
           <Signup />
+        </Route>
+
+        <Route exact path = '/login'>
+          <Login />
         </Route>
       </Switch>
     </div>

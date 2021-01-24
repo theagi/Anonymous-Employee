@@ -3,7 +3,7 @@ import './SignUp.css';
 
 const SignUp = () =>{
     useEffect(() =>{
-        document.title = 'New Employee';
+        document.title = 'Register';
     },[]);
 
     const [identity, updateIdentity] = useState('employee');

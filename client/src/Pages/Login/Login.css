@@ -1,0 +1,50 @@
+#loginContainer{
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    top:15vh;
+    font-family: 'Lato', sans-serif;
+}
+
+#loginContainer h1{
+    text-align: center;
+    color:#007fff;
+}
+
+#loginContainer img{
+    margin:auto;
+    display: block;
+}
+
+#type{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#loginContainer form{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin:auto;
+}
+
+#loginContainer form input{
+    padding:2%;
+    border-radius:25px;
+    border:1px solid #007fff;
+    margin-top:10px;
+    font-family: 'Lato', sans-serif;
+}
+
+#loginContainer form button{
+    color:white;
+    background-color: #007fff;
+    height:5vh;
+    font-size: 1rem;
+    border:none;
+    width:100%;
+    margin-top:10px;
+    margin:10px auto;
+    font-family: 'Lato', sans-serif;
+}
