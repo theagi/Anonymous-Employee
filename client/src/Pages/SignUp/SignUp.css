@@ -25,7 +25,7 @@
     transition:transform 0.5s;
 }
 
-.inputs input[type = "text"], .inputs input[type = 'password']{
+.inputs input[type = "text"], .inputs input[type = 'password'], .inputs input[type = 'email']{
     border-radius:25px;
     border:1px solid #007fff;
     padding:2%;
